@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+  --primary:#fff0fa;
+  --pink:#fb9902;
+  --pribla:#2d2d2d;
+}
+body{
+  font-family: "Roboto condesed", sans-serif;
+}
+nav{
+  z-index: 2;
+  
+}
+.logo{
+  width:150px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar navbar-expand-lg navbar-light bg-dark{
+  position: fixed;
+  top: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a.nav-link{
+  font-weight: 500;
+  letter-spacing: 0.00375rem;
+  cursor: pointer;
+  
 }
+nav ul li {
+  text-transform: uppercase;
+}
+.navbar-nav>li>a{
+  margin-left: 0.75rem;
+  margin-right: 00.75rem;
+  color:var(--primary)!important;
+   border-top: 3px 
+}
+.navbar-brand{
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+.navbar-nav>li>a.active, .navbar-nav>li>a.active:focus{
+  border-top: 3px solid var(--pink);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.navbar-nav>li>a:hover{
+  border-top: 3px solid var(--pink);
+
+}
+.header-wraper{
+  position: relative;
+  background: url(./components/bg.jpg) no-repeat;
+  background-size:cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info{
   display: flex;
+  position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
   flex-direction: column;
+  justify-content:center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  
+}
+.main-info h1{
+  color:var(--pink);
+  
+  
+}
+.Typed-text{
+  font-size: 2rem;
+  color:var(--primary);
 }
 
-.App-link {
-  color: #61dafb;
+.btn-main-offer{
+  margin-top: 1rem;
+  border:5px solid var(--pink);
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 7px 60px 7px 60px;
+  color: var(--primary);
+  z-index: 1;
 }
+.tsparticles-canvas-el{
+  position:absolute;
+  height: 250vh;
+  width: 10vw;
+  z-index:1;
+}
+.about-wraper{
+  position:static;
+  background: url(./components/bg1.png) no-repeat;
+  background-size:cover;
+  background-position: center;
+  
+  
+}
+.picture{
+  margin-top:4rem;
+  margin-left:2rem ;
+}
+.skills-wraper{
+  position: relative;
+  background: url(./components/grey.jpg);
+  
+  background-position: center;
+  height: 90vh;
+}
+.Skill-info{
+  font-weight: bolder;
+  color: var(--primary);
+  margin-top: 2REM;
+  display: flex;
+  position: relative;
+top: 0;
+bottom: 1;
+right: 0;
+left: 0;
+margin-top: 5rem;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.technical{
+   display: flex;
+ margin-left: 1rem;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+
+}
+.mbsc-row{
+  margin-left: 4rem;
+  margin-top: 4rem;
+  display: flexbox;
+}
+.projects-wraper{
+ 
+}
+.project-Typed-text{
+  color: var(--pribla);
 }
